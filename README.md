@@ -83,7 +83,7 @@ bean-there/
 
 
 
- ##🎨 **Design**
+##🎨 **Design**
 
 Bean There uses a premium dark café aesthetic with:
 Deep charcoal background
