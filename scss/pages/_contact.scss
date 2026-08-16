@@ -1,0 +1,167 @@
+@use "../abstracts/variables" as *;
+
+// =====================================
+// Contact Section
+// =====================================
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 5rem;
+    align-items: start;
+    width: min(100% - 3rem, $container-width);
+    margin-inline: auto;
+    padding: 6rem 0;
+}
+
+
+// =====================================
+// Contact Information
+// =====================================
+
+.contact-info {
+    max-width: 550px;
+}
+
+.contact-info h2 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 600;
+}
+
+.contact-info h2 span {
+    color: $color-accent;
+}
+
+.contact-info > p:not(.section-eyebrow) {
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-detail h3 {
+    margin-bottom: 0.5rem;
+    color: $color-accent;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.contact-detail p,
+.contact-detail address,
+.contact-detail a {
+    margin: 0;
+    color: $color-text-secondary;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.contact-detail address {
+    font-style: normal;
+}
+
+.contact-detail a {
+    transition: color 0.3s ease;
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+
+// =====================================
+// Social Links
+// =====================================
+
+.contact-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact-socials a {
+    color: $color-text-primary;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+
+// =====================================
+// Contact Form
+// =====================================
+
+.contact-form-wrapper {
+    padding: 2.5rem;
+    background-color: $color-bg-secondary;
+    border: 1px solid rgba(244, 239, 230, 0.08);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    color: $color-text-primary;
+    background-color: transparent;
+    border: 1px solid rgba(244, 239, 230, 0.15);
+    outline: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: $color-text-secondary;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: $color-accent;
+    background-color: rgba(244, 239, 230, 0.02);
+}
+
+.form-error {
+    min-height: 1rem;
+    color: #d66;
+    font-size: 0.75rem;
+}
+
+.form-success {
+    min-height: 1.25rem;
+    margin: 0;
+    color: $color-accent;
+    font-size: 0.85rem;
+}

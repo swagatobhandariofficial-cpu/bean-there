@@ -1,0 +1,45 @@
+// ==============================
+// Bean There - Brand Colors
+// ==============================
+
+$color-bg-primary: #11100e;
+$color-bg-secondary: #211a16;
+
+$color-accent: #c8a96b;
+
+$color-text-primary: #f4efe6;
+$color-text-secondary: #b9b0a4;
+
+$color-light-bg: #ede7dc;
+$color-dark-text: #211a16;
+
+
+// ==============================
+// Typography
+// ==============================
+
+$font-heading: "Cormorant Garamond", serif;
+$font-body: "Inter", sans-serif;
+
+
+// ==============================
+// Spacing
+// ==============================
+
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xl: 6rem;
+$section-space: clamp(4.5rem, 8vw, 6.5rem);
+
+
+// ==============================
+// Layout
+// ==============================
+
+$container-width: 1200px;
+
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;

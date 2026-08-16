@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+
+body {
+  font-family: $font-body;
+  background-color: $color-bg-primary;
+  color: $color-text-primary;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
+  line-height: 1.1;
+}
+
+p {
+  color: $color-text-secondary;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+button {
+  border: none;
+}
+
+:focus-visible {
+  outline: 2px solid $color-accent;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

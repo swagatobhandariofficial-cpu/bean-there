@@ -1,0 +1,137 @@
+@use "../abstracts/variables" as *;
+
+// =====================================
+// Menu Cards
+// =====================================
+
+.menu-card {
+    background-color: $color-bg-secondary;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(244, 239, 230, 0.08);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+
+        border-color: rgba(200, 169, 107, 0.5);
+    }
+}
+
+.menu-card-image {
+    height: 180px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+
+        transition: transform 0.6s ease;
+    }
+}
+
+.menu-card:hover .menu-card-image img {
+    transform: scale(1.04);
+}
+
+.menu-card-content {
+    padding: 1.25rem;
+}
+
+.menu-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    margin-bottom: 0.75rem;
+
+    h3 {
+        font-family: $font-heading;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    span {
+        color: $color-accent;
+
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+.menu-card-content p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+// =====================================
+// Testimonial Cards
+// =====================================
+
+.testimonials {
+    width: min(100% - 3rem, $container-width);
+    margin-inline: auto;
+
+    padding: $section-space 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    padding: 2rem;
+
+    background-color: $color-bg-secondary;
+
+    border: 1px solid rgba(244, 239, 230, 0.08);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease;
+
+    &:hover {
+        transform: translateY(-6px);
+
+        border-color: rgba(200, 169, 107, 0.5);
+    }
+}
+
+.testimonial-rating {
+    margin-bottom: 1.5rem;
+
+    color: $color-accent;
+
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+}
+
+.testimonial-card blockquote {
+    margin-bottom: 2rem;
+
+    font-family: $font-heading;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.testimonial-author {
+    margin: 0;
+
+    color: $color-text-secondary;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}

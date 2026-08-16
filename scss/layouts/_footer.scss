@@ -1,0 +1,124 @@
+@use "../abstracts/variables" as *;
+
+// =====================================
+// Footer
+// =====================================
+
+.site-footer {
+    width: min(100% - 3rem, $container-width);
+    margin-inline: auto;
+
+    padding: 4.5rem 0 2rem;
+    border-top: 1px solid rgba(244, 239, 230, 0.1);
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 5rem;
+    padding-bottom: 4rem;
+}
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+    color: $color-text-primary;
+    font-family: $font-heading;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.footer-brand p {
+    max-width: 280px;
+    color: $color-text-secondary;
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-column h3 {
+    margin-bottom: 0.75rem;
+
+    color: $color-accent;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.footer-column a,
+.footer-column address,
+.footer-column p {
+    color: $color-text-secondary;
+
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+.footer-column a {
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+.footer-column address {
+    font-style: normal;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(244, 239, 230, 0.08);
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: $color-text-secondary;
+    font-size: 0.75rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-socials a {
+    color: $color-text-secondary;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+.footer-logo .brand-mark {
+    width: 2rem;
+    height: 2rem;
+}

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact | Bean There</title>
+
+    <meta
+      name="description"
+      content="Get in touch with Bean There. Visit our café, send us a message, or connect with the owner."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="logo" aria-label="Bean There home">
+          <span class="brand-mark" aria-hidden="true"
+            ><img src="images/coffee-bean-mark.svg" alt=""
+          /></span>
+          <span>Bean There</span>
+        </a>
+
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="index.html#menu">Menu</a>
+          </li>
+
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <a href="contact.html" class="nav-button"> Visit Us </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true">☰</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contact Hero -->
+
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <br />
+          <p class="section-eyebrow">Get In Touch</p>
+
+          <h1>
+            Let's start a
+            <span>conversation.</span>
+          </h1>
+
+          <p>
+            Have a question, planning an event, or simply want to say hello?
+            We'd love to hear from you.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+
+      <section class="contact-section">
+        <div class="contact-info">
+          <p class="section-eyebrow">Contact Bean There</p>
+
+          <h2>
+            We'd love to
+            <span>hear from you.</span>
+          </h2>
+
+          <p>
+            Whether you're planning a visit, asking about an event, or just want
+            to connect, reach out anytime.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <h3>Owner</h3>
+
+              <p>Swagato Bhandari</p>
+            </div>
+
+            <div class="contact-detail">
+              <h3>Email</h3>
+
+              <a href="mailto:swagatobhandariofficial@gmail.com">
+                swagatobhandariofficial@gmail.com
+              </a>
+            </div>
+
+            <div class="contact-detail">
+              <h3>Visit</h3>
+
+              <address>
+                24 Park Street<br />
+                Kolkata, West Bengal
+              </address>
+            </div>
+
+            <div class="contact-detail">
+              <h3>Social</h3>
+
+              <div class="contact-socials">
+                <a
+                  href="https://www.linkedin.com/in/swagato-bhandari-039366385"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+
+                <a
+                  href="https://www.instagram.com/_spriiha/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="contact-form-wrapper">
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://formspree.io/f/xqpzdvdq"
+            method="POST"
+            novalidate
+          >
+            <div class="form-group">
+              <label for="name"> Your Name </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                autocomplete="name"
+                required
+              />
+
+              <small class="form-error"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email"> Email Address </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+
+              <small class="form-error"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="subject"> Subject </label>
+
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What is this about?"
+                required
+              />
+
+              <small class="form-error"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="message"> Message </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+
+              <small class="form-error"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+            <p class="form-success" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo" aria-label="Bean There home">
+            <span class="brand-mark" aria-hidden="true"
+              ><img src="images/coffee-bean-mark.svg" alt=""
+            /></span>
+            <span>Bean There</span>
+          </a>
+
+          <p>Coffee for the moments worth slowing down for.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Explore</h3>
+
+            <a href="index.html"> Home </a>
+
+            <a href="about.html"> About </a>
+
+            <a href="index.html#menu"> Menu </a>
+
+            <a href="services.html"> Services </a>
+          </div>
+
+          <div class="footer-column">
+            <h3>Visit</h3>
+
+            <address>
+              24 Park Street<br />
+              Kolkata, West Bengal
+            </address>
+
+            <p>
+              Mon — Fri: 7 AM — 9 PM<br />
+              Sat — Sun: 8 AM — 10 PM
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Bean There. All rights reserved.</p>
+
+        <div class="footer-socials">
+          <a
+            href="https://www.instagram.com/_spriiha/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+
+          <a href="mailto:swagatobhandariofficial@gmail.com"> Email </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+  </body>
+</html>
